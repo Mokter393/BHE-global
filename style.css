@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Custom CSS */
+
+.navbar-nav>.nav-item{
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.btn-nav{
+    margin-left: 25px;
+    background: linear-gradient(266.4deg, #EF4E36 11.83%, #F68B21 79.74%);
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 20px;
+    color: #fff;
+}

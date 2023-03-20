@@ -4,7 +4,16 @@
     font-family: 'Jost', sans-serif;
 }
 
+body{
+    margin: 0px 100px;
+    background-color: #F5F5F5;
+}
+
 /* Custom CSS */
+
+.header-nav{
+    margin-bottom: 81px;
+}
 
 .navbar-nav>.nav-item{
     margin-left: 25px;
@@ -22,4 +31,164 @@
     font-weight: 700;
     padding: 8px 20px;
     color: #fff;
+}
+
+.banner-text-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+.banner-text-subtitle{
+    width: 487px;
+    color: #fff;
+    border-radius: 0px 10px 10px 10px;
+    padding: 5px;
+    font-size: 2.18em;
+    font-weight: 600;
+    background: linear-gradient(266.4deg, #EF4E36 11.83%, #F68B21 79.74%);
+    margin-bottom: 45px;
+}
+
+.btn-search{
+    background: linear-gradient(266.4deg, #EF4E36 11.83%, #F68B21 79.74%);
+    border-radius: 10px;
+    border: none;
+    width: 125px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 20px;
+    color: #fff;
+    margin-left: -130px;
+}
+
+.search-box{
+    width: 492px;
+    height: 46px;
+    color: #BABABA;
+    padding: 9px 0px 9px 23px;
+    font-size: 1.25em;
+}
+
+.banner-container{
+    margin-bottom: 57px;
+}
+
+.country-container{
+    margin-bottom: 90px;
+}
+
+.country-row{
+    display: flex;
+    justify-content: center;
+}
+
+.country-title{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+
+.country-text{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.country-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.accreditations-container{
+    margin-bottom: 90px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 83px;
+}
+
+.about-title,.our-student-title,.study-abroad-title{
+    margin-bottom: 29px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about-description{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.logos{
+    filter: grayscale(90%);
+}
+
+.logos:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.main-form-container{
+    margin-bottom: 100px;
+}
+
+.form-main{
+    padding: 60px;
+    background: #F9FEFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-details{
+    position: relative;
+}
+
+.img-character{
+    background-size: cover;
+    position: absolute;
+    right: 100px;
+    
+}
+
+
+
+
+/*********************
+    MEDIA QUERY
+**********************/
+
+@media only screen and (max-width:576px) {
+    
+    .img-character{
+        display: none;
+    }
+
+    .banner-text-subtitle{
+        width: 100%;
+    }
+
+    .btn-search{
+        margin-left: -50px;
+    }
+    
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    .img-character{
+        display: none;
+    }
+
+    .country-row{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
 }

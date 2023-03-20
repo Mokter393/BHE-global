@@ -15,9 +15,9 @@
     <title>BHE Global</title>
 </head>
 <body>
-    <header>
+    <header class="header-nav">
         <nav class="navbar navbar-expand-lg">
-            <div class="container">
+            <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="img/bhe-logo.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,202 @@
           </nav>
     </header>
 
-    <main></main>
+    <main>
+        <div class="banner-container">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-12 col-lg-6 col-md-6 banner-img">
+                <img class="img-fluid mx-auto d-block" src="img/BHE Global Banner.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 banner-text">
+                <h1 class="banner-text-title">Meet Over 100+ <br> Universities</h1>
+                <h2 class="banner-text-subtitle">UK, USA, Canada, & Australia</h2>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 search-box" type="search" placeholder="What are you looking for?" aria-label="Search">
+                    <button class="btn btn-outline-success btn-search" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="country-container">
+        <div class="row country-row">
+            <h1 class="country-title">Could Your Next Home be?</h1>
+            <div class="col-12 col-lg-3 col-md-6 country-box-container d-flex justify-content-center">
+                <div class="country-box position-relative">
+                    <a class="position-absolute top-50 start-50 translate-middle country-text" href="">Canada</a>
+                    <img class="img-fluid country-img" src="img/Canada.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 d-flex justify-content-center">
+                <div class="country-box position-relative">
+                    <a class="position-absolute top-50 start-50 translate-middle country-text" href="">USA</a>
+                    <img class="img-fluid country-img" src="img/USA.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 d-flex justify-content-center">
+                <div class="country-box position-relative">
+                    <a class="position-absolute top-50 start-50 translate-middle country-text" href="">UK</a>
+                    <img class="img-fluid country-img" src="img/UK.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 d-flex justify-content-center">
+                <div class="country-box position-relative">
+                    <a class="position-absolute top-50 start-50 translate-middle country-text" href="">Australia</a>
+                    <img class="img-fluid country-img" src="img/australia.png" alt="">
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <div class="container-fluid accreditations-container">
+        <div class="row d-flex justify-content-evenly align-items-center">
+          <h1 class="accreditations-title text-center">Accreditations</h1>
+            <div class="col-12 col-lg-2 col-md-3 justify-content-center ms-2 logos">
+                <img class="img-fluid" src="img/Logo/logo-1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-2 col-md-2 justify-content-center ms-2 logos">
+              <img class="img-fluid" src="img/Logo/logo-2.png" alt="">
+          </div>
+          <div class="col-12 col-lg-2 col-md-3 justify-content-center ms-2 logos">
+            <img class="img-fluid" src="img/Logo/logo-3.png" alt="">
+        </div>
+        <div class="col-12 col-lg-2 col-md-3 justify-content-center ms-2 logos">
+          <img class="img-fluid" src="img/Logo/logo-4.png" alt="">
+      </div>
+      <div class="col-12 col-lg-2 col-md-3 justify-content-center ms-2 logos">
+        <img class="img-fluid" src="img/Logo/logo-5.png" alt="">
+      </div>
+        </div>
+    </div>
+
+    <div class="container-fluid about justify-content-center">
+        <h1 class="text-center about-title">About BHE Global</h1>
+        <p class="text-justified about-description">The UK’s most trusted University representative was established in 2012. Boost Education Service has 10 years of operational experience in the UK education industry. In addition, We have highly educated and experienced admission advisers, counsellors, compliance officers, lawyers, and marketing experts to provide excellent admission support for potential applicants. Most of our employees hold a UK University master’s degree. They have vast knowledge of the UK education system, admission process, entry requirements, and education market intelligence. Our employees are trained by UK universities, UCAS, British Council, UK NARIC & English UK and other educational institutions. Boost Education Service has recruited over 4000 International, EU & Home students in the UK since 2012. Over the world, fifty (50) countries students applied to UK Universities through the Boost Education service.</p>
+        <button class="btn-nav text-center mx-auto">Read More...</button>
+    </div>
+
+    <div class="container-fluid main-form-container">
+      <h1 class="text-center study-abroad-title">Study Abroad with BHE Global</h1>
+      <div class="row g-2">
+        <div class="col-md-8 col-lg-8 form-details">
+        <form class="row g-2 form-main">
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Your First Name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Your First Name" required>
+          </div><br>
+          <div class="col-md-12">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+          </div><br>
+          <div class="col-md-12">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="exampleInputTel" aria-describedby="telHelp" placeholder="+88" required>
+              <div id="telHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="exampleInputEmail1" class="form-label">Your preffered study destination</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Please select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="exampleInputEmail1" class="form-label">When do you want to plan study?</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Please select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nearest Office</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Please select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="exampleInputEmail1" class="form-label">Preffered mode of counselling</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Please select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="exampleInputEmail1" class="form-label">About your fund?</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Please select</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="exampleInputEmail1" class="form-label">Study level</label>
+            <select class="form-select" aria-label="Default select example">
+              <option class="selected-item"> Please select </option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                Please contact me by phone, email or SMS to assist with my enquiry
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                I would like to receive updates and offers from BHE
+              </label>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center mt-5">
+            <button class="btn btn-nav" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-4 col-md-4 img-character">
+        <img class="img-fluid" src="img/character.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid main-form-container">
+    <h1 class="text-center our-student-title">Our Students Stories</h1>
+    <div class="row ">
+      <div class="col-12 col-lg-4 col-md-4">
+        <iframe width="400" height="400" src="https://www.youtube.com/embed/s8JBRdjjf_4" title="YouTube video player" frameborder="5" allowfullscreen></iframe>
+      </div>
+      <div class="col-12 col-lg-4 col-md-4">
+        <iframe width="400" height="400" src="https://www.youtube.com/embed/immtQB9H8WY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="col-12 col-lg-4 col-md-4">
+        <iframe width="400" height="400" src="https://www.youtube.com/embed/s8JBRdjjf_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+    </main>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

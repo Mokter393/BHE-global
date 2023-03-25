@@ -109,6 +109,10 @@ body{
 .accreditations-container{
     margin-bottom: 90px;
 }
+.accreditations-title{
+    font-size: 25px;
+    font-weight: 700;
+}
 
 .about{
     display: flex;
@@ -149,6 +153,10 @@ body{
 
 .form-details{
     position: relative;
+}
+
+.form-btn-container{
+    margin-top: 50px;
 }
 
 .img-character{
@@ -193,7 +201,7 @@ body{
 }
 
 .btn-blog{
-    margin-left: 160px;
+    margin-left: 230px;
     background: linear-gradient(266.4deg, #EF4E36 11.83%, #F68B21 79.74%);
     border-radius: 25px;
     border: none;
@@ -224,6 +232,26 @@ body{
     margin-bottom: 27px;
 }
 
+.subscribe-box{
+    width: 492px;
+    height: 46px;
+    color: #BABABA;
+    padding: 9px 0px 9px 23px;
+    font-size: 1.25em;
+}
+.btn-subscribe{
+    background: linear-gradient(266.4deg, #EF4E36 11.83%, #F68B21 79.74%);
+    border-radius: 10px;
+    border: none;
+    width: 125px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 20px;
+    color: #fff;
+    margin-left: -130px;
+}
+
 .footer-top{
     padding: 89px;
     background-color: #F7F7F7;
@@ -249,11 +277,154 @@ body{
 }
 
 
-/*********************
-    MEDIA QUERY
-**********************/
+.hide {
+    display: none;
+}
 
-@media only screen and (max-width:576px) {
+
+/***************************************************
+    MEDIA QUERY FOR DEVICE FRIENDLY RESPONSIVE CODE
+****************************************************/
+
+/******************************************* 
+1. 320px — 480px: Mobile devices
+2. 481px — 768px: iPads, Tablets
+3. 769px — 1024px: Small screens, laptops
+4. 1025px — 1200px: Desktops, large screens
+5. 1201px and more —  Extra large screens, TV
+*********************************************/
+
+/* 1. (320px — 480px) Mobile devices */
+@media only screen and (min-width:320px) and (max-width:480px){
+    .banner-text-title{
+        font-size: 23px;
+    }
+    .banner-text-subtitle{
+        font-size: 1.18em;
+    }
+    .search-box-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-box,.subscribe-box{
+        padding: 5px 10px;
+        font-size: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .btn-search{
+        width: 85px;
+        height: 46px;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 5px 15px;
+        margin-left: 0px;
+    }
+    .country-title{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .country-img{
+        height: auto;
+    }
+    .country-box{
+        margin-bottom: 10px;
+    }
+    .accreditations-title{
+        font-size: 18px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .accreditations-item{
+        margin-bottom: 15px;
+        margin-left: 0px;
+        padding: 0;
+    }
+    .about-title,.our-student-title,.study-abroad-title,.testimonial-title,.blog-title{
+        font-size: 18px;
+    }
+    .about-description {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    .btn-nav{
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+    .form-main{
+        padding: 0px;
+        font-size: 12px;
+    }
+    .form-input,.form-select{
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+    .form-btn-container{
+        margin-top: 15px;
+    }
+    .video-box{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .testimonial-detail{
+        padding: 5px 10px;
+        font-size: 10px;
+        text-align: justify;
+    }
+    .testimonial-colon{
+        font-size: 30px;
+    }
+    .blog-card-title{
+        font-size: 15px;
+    }
+    .btn-blog{
+        margin-left: 0px;
+        font-size: 7px;
+        padding: 5px 8px;
+    }
+    .card-items{
+        margin-bottom: 20px;
+    }
+    .subscribe-container {
+        padding: 0px;
+    }
+    .subscribe-subtitle{
+        font-size: 18px;
+    }
+    .subscribe-subtitle{
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+    .subscribe-form{
+        flex-direction: column;
+    }
+    .subscribe-image{
+        display: none;
+    }
+    .footer-top{
+        font-size: 10px;
+        padding: 0px 10px;
+        margin-top: 50px;
+    }
+    .quick-links-title,.our-courses-title,.follow-us-title{
+        font-size: 12px;
+    }
+    .quick-links-list,.our-courses-list{
+        padding-left: 10px;
+    }
+    .quick-links-list>li>a,.our-courses-list>li>a,.footer-bottom,.blog-card-text{
+        font-size: 10px;
+    }
+    .social-icon-container{
+        margin-bottom: 20px;
+    }
+}
+
+/* 2. (481px — 768px) iPads, Tablets */
+@media only screen and (min-width:481px) and (max-width:768px) {
     
     .img-character{
         display: none;
@@ -261,23 +432,328 @@ body{
 
     .banner-text-subtitle{
         width: 100%;
+        font-size: 2em;
+    }
+    .search-box{
+        font-size: 13px;
+        padding: 5px 9px;
+    }
+    .btn-search{
+        margin-left: -10px;
+    }
+    .country-title{
+        margin-bottom: 15px;
+    }
+    .country-box{
+        margin-bottom: 30px;
+    }
+    .accreditations-title{
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .accreditations-item{
+        margin-bottom: 10px;
+        margin: 0px 20px;
+        padding: 0;
+    }
+    
+    .about-title,.our-student-title,.study-abroad-title,.testimonial-title,.blog-title,.accreditations-title{
+        font-size: 22px;
+    }
+    .about-description {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    .btn-nav{
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+    .form-main{
+        padding: 15px;
+        font-size: 14px;
+    }
+    .form-input,.form-select{
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .form-btn-container{
+        margin-top: 15px;
+    }
+    .video-box{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .testimonial-detail{
+        padding: 10px 15px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .testimonial-colon{
+        font-size: 40px;
+    }
+    .blog-card-title{
+        font-size: 22px;
+    }
+    .btn-blog{
+        margin-left: 70%;
+        font-size: 7px;
+        padding: 5px 10px;
+    }
+    .card-items{
+        margin-bottom: 20px;
+    }
+    .subscribe-container {
+        padding: 0px;
+    }
+    .subscribe-subtitle{
+        font-size: 22px;
+        text-align: left;
+    }
+    .subscribe-subtitle{
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+    .subscribe-image{
+        display: none;
+    }
+    .btn-subscribe{
+        width: 85px;
+        height: 46px;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 5px 15px;
+        margin-left: -20px;
+    }
+    .subscribe-box{
+        width: 100%;
+        font-size: 13px;
+        padding: 5px 9px;
+    }
+    .subscribe-subcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-top{
+        font-size: 14px;
+        padding: 0px 10px;
+        margin-top: 50px;
+    }
+    .quick-links-title,.our-courses-title,.follow-us-title{
+        font-size: 18px;
+    }
+    .quick-links-list,.our-courses-list{
+        padding-left: 10px;
+    }
+    .quick-links-list>li>a,.our-courses-list>li>a,.footer-bottom,.blog-card-text{
+        font-size: 14px;
+    }
+    .social-icon-container{
+        margin-bottom: 20px;
+    }
+}
+
+/* 3. (769px — 1024px) Small screens, laptops */
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .navbar-nav>.nav-item{
+        margin-left: 6px;
+        font-size: 9px;
+    }
+    .btn-nav{
+        margin-left: 8px;
+        font-size: 8px;
+        font-weight: 600;
+        padding: 8px 12px;
+    }    
+    .banner-text-title{
+        font-size: 40px;
+    }
+    .banner-text-subtitle{
+        font-size: 25px;
+        width: 100%;
     }
 
     .btn-search{
-        margin-left: -50px;
+        margin-left: -10px;
     }
-    
+    .country-box{
+        margin-bottom: 25px;
+    }
+    .country-img{
+        height: auto;
+    }
+    .accreditations-title{
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .accreditations-item{
+        margin: 0px 15px;
+        padding: 0;
+        width: 15%;
+    }
+    .accreditations-item>img{
+        width: auto;
+    }
+    .about-title,.our-student-title,.study-abroad-title,.testimonial-title,.blog-title,.accreditations-title{
+        font-size: 30px;
+    }
+    .about-description {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    .img-character{
+        height: 600px;
+        position: sticky;
+        top: 10px;
+        bottom: 0px;
+    }
+    .img-character>img{
+        height: 400px;
+    }
+
+    .sticky-row{
+        position: relative;
+    }
+    .form-main{
+        padding: 15px;
+        font-size: 14px;
+    }
+    .form-input,.form-select{
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .form-btn-container{
+        margin-top: 15px;
+    }
+    .video-box{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .testimonial-detail{
+        padding: 10px 15px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .testimonial-colon{
+        font-size: 40px;
+    }
+    .blog-card-title{
+        font-size: 22px;
+    }
+    .btn-blog{
+        margin-left: 70%;
+        font-size: 7px;
+        padding: 5px 10px;
+    }
+    .card-items{
+        margin-bottom: 20px;
+    }
+
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px){
-    .img-character{
-        display: none;
+
+/* 4. (1025px — 1200px) Desktops, large screens */
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+    .navbar-nav>.nav-item{
+        margin-left: 6px;
+        font-size: 9px;
+    }
+    .btn-nav{
+        margin-left: 8px;
+        font-size: 8px;
+        font-weight: 600;
+        padding: 8px 12px;
+    }    
+    .banner-text-title{
+        font-size: 40px;
+    }
+    .banner-text-subtitle{
+        font-size: 25px;
+        width: 100%;
     }
 
-    .country-row{
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
+    .btn-search{
+        margin-left: -10px;
+    }
+    .country-box{
+        margin-bottom: 25px;
+    }
+    .country-img{
+        height: auto;
+    }
+    .accreditations-title{
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .accreditations-item{
+        margin: 0px 15px;
+        padding: 0;
+        width: 15%;
+    }
+    .accreditations-item>img{
+        width: auto;
+    }
+    .about-title,.our-student-title,.study-abroad-title,.testimonial-title,.blog-title,.accreditations-title{
+        font-size: 30px;
+    }
+    .about-description {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    .img-character{
+        height: 600px;
+        position: sticky;
+        top: 10px;
+        bottom: 0px;
+    }
+    .img-character>img{
+        height: 400px;
+    }
+
+    .sticky-row{
+        position: relative;
+    }
+    .form-main{
+        padding: 15px;
+        font-size: 14px;
+    }
+    .form-input,.form-select{
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .form-btn-container{
+        margin-top: 15px;
+    }
+    .video-box{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    .testimonial-detail{
+        padding: 10px 15px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .testimonial-colon{
+        font-size: 40px;
+    }
+    .blog-card-title{
+        font-size: 22px;
+    }
+    .btn-blog{
+        margin-left: 70%;
+        font-size: 7px;
+        padding: 5px 10px;
+    }
+    .card-items{
+        margin-bottom: 20px;
     }
 
 }

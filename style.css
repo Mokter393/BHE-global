@@ -39,7 +39,6 @@ body{
     font-weight: 700;
 }
 
-
 .banner-text-subtitle{
     width: 487px;
     color: #fff;
@@ -91,7 +90,6 @@ body{
     text-align: center;
     margin-bottom: 48px;
 }
-
 
 .country-text{
     text-decoration: none;
@@ -173,27 +171,12 @@ body{
     margin-bottom: 150px;
 }
 
-.testimonial-colon{
-    font-size: 80px;
-    font-weight: 400;
-    color: #fff;
-    font-family: 'Inika', serif;
-}
-
-.testimonial-img{
-    width: 100%;
-}
-
-.testimonial-detail{
+.bg-testimonial{
     background: linear-gradient(266.4deg, #EF4E36 11.83%, #F68B21 79.74%);
     color: #fff;
-    padding: 50px 80px;
-    font-size: 18px;
-    font-weight: 400;
-    height: 539px;
 }
-.testimonial-author{
-    color: #fff;
+.card-details .author{
+    color: #fff !important;
 }
 
 .blog-container{
@@ -375,15 +358,12 @@ body{
         height: 200px;
         margin-bottom: 20px;
     }
-    .testimonial-detail{
-        padding: 0px 0px;
-        font-size: 8px;
+    .card-details{
+        padding: 5px 8px;
+        font-size: 7px;
         text-align: justify;
     }
-    .testimonial-colon{
-        font-size: 30px;
-    }
-
+    
     .btn-subscribe{
         font-size: 12px;
         padding: 6px 15px;
@@ -497,14 +477,7 @@ body{
         height: 200px;
         margin-bottom: 30px;
     }
-    .testimonial-detail{
-        padding: 10px 15px;
-        font-size: 14px;
-        text-align: justify;
-    }
-    .testimonial-colon{
-        font-size: 40px;
-    }
+   
     .blog-card-title{
         font-size: 22px;
     }
@@ -652,21 +625,7 @@ body{
         height: 200px;
         margin-bottom: 30px;
     }
-    .testimonial-detail{
-        padding: 0px 0px;
-        font-size: 10px;
-        font-weight: 400;
-        height: 226px;
-        margin-bottom: 5px;
-    }
-
-    .testimonial-detail>.card-title{
-        font-size: 9px;
-    }
-
-    .testimonial-colon{
-        font-size: 25px;
-    }
+    
     .blog-card-title{
         font-size: 22px;
     }
@@ -772,15 +731,7 @@ body{
         height: 200px;
         margin-bottom: 30px;
     }
-    .testimonial-detail{
-        padding: 20px 30px;
-        font-size: 12px;
-        font-weight: 400;
-        height: 333px;
-    }
-    .testimonial-colon{
-        font-size: 40px;
-    }
+    
     .blog-card-title{
         font-size: 22px;
     }
@@ -814,12 +765,6 @@ body{
         margin-bottom: 30px;
     }
 
-    .testimonial-detail{
-        padding: 30px 40px;
-        font-size: 16px;
-        font-weight: 400;
-        height: 406px;
-    }
     .btn-blog{
         margin-left: 150px;
         font-size: 12px;
